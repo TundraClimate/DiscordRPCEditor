@@ -19,7 +19,7 @@
     },
     "windows": [
       {
-        "title": "rpce",
+        "title": "Discord RPC Editor",
         "width": 800,
         "height": 600,
         "resizable": false
