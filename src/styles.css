@@ -1,4 +1,8 @@
 :root {
   background-color: #111;
   color: white;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
 }
