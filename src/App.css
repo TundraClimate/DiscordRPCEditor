@@ -4,3 +4,18 @@ h1 {
   position: relative;
   bottom: 0.5em;
 }
+
+.appid-box {
+  position: relative;
+  bottom: 2.5em;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.appid-input {
+  background-color: #222;
+  color: white;
+  -webkit-text-fill-color: white;
+  width: 20em;
+}
