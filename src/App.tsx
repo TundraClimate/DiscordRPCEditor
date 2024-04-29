@@ -11,10 +11,16 @@ export const App = () => {
   };
 
   const handleConnect = () => {
+    if (!isConnected()) {
+      invoke("connect", { id: appId() });
+    }
     setConnected(true);
   };
 
   const handleDisconnect = () => {
+    if (isConnected()) {
+      invoke("disconnect");
+    }
     setConnected(false);
   };
 
@@ -26,6 +32,7 @@ export const App = () => {
           class="appid-input"
           onChange={(e) => handleInput(e.currentTarget.value)}
           size="small"
+          disabled={isConnected()}
           variant="filled"
           label="Discord Client ID"
         />
