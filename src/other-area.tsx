@@ -1,13 +1,28 @@
+import { invoke } from "@tauri-apps/api";
+import { createSignal } from "solid-js";
 import { Button } from "@suid/material";
 
 export const OtherArea = () => {
+  const [isCooldown, setCooldown] = createSignal(false);
+
+  const handleUpdate = () => {
+    if (!isCooldown()) {
+      // invoke("update");
+      setCooldown(true);
+      setTimeout(() => {
+        if (isCooldown()) setCooldown(false);
+      }, 1500);
+    }
+  };
+
   return (
     <div class="other-area">
       <Button
         color="inherit"
         size="large"
-        variant="outlined"
+        variant={isCooldown() ? "contained" : "outlined"}
         startIcon="&#8635;"
+        onClick={handleUpdate}
       >
         update activity
       </Button>
