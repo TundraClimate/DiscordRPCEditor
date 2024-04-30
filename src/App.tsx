@@ -26,6 +26,7 @@ export const App = () => {
 
   return (
     <div>
+      <Box class="headbar" />
       <h1>DiscordRPCEditor</h1>
       <div class="appid-box">
         <TextField
