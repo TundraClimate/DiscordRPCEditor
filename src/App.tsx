@@ -1,7 +1,7 @@
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
 import { createSignal } from "solid-js";
-import { Button, TextField } from "@suid/material";
+import { Button, TextField, Box, Stack } from "@suid/material";
 
 export const App = () => {
   const [appId, setAppId] = createSignal("");
@@ -53,6 +53,26 @@ export const App = () => {
           disconnect
         </Button>
       </div>
+      <Stack direction="row" spacing={1} justifyContent="space-between">
+        <Stack spacing={1}>
+          <Box class="box-party">Box</Box>
+          <Box class="box-image">Box</Box>
+          <Box class="box-itext">Box</Box>
+        </Stack>
+        <Stack spacing={1}>
+          <Box class="box-button">Box</Box>
+          <Box class="box-text">Box</Box>
+          <Box class="box-cbox">Box</Box>
+          <div class="update-area">
+            <Button color="inherit" size="large" variant="outlined">
+              &#8635;update activity
+            </Button>
+            <Button color="primary" variant="outlined">
+              Develop Portal🔗
+            </Button>
+          </div>
+        </Stack>
+      </Stack>
     </div>
   );
 };

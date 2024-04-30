@@ -19,3 +19,46 @@ h1 {
   -webkit-text-fill-color: white;
   width: 20em;
 }
+
+[class*="box-"] {
+  outline: 1px solid;
+  text-align: left;
+}
+
+.box-party {
+  height: 200px;
+  width: 390px;
+}
+
+.box-button {
+  height: 250px;
+  width: 390px;
+}
+
+.box-image {
+  height: 150px;
+  width: 390px;
+}
+
+.box-itext {
+  height: 150px;
+  width: 390px;
+}
+
+.box-text {
+  height: 150px;
+  width: 390px;
+}
+
+.box-cbox {
+  height: 40px;
+  width: 390px;
+}
+
+.update-area {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  gap: 10px;
+}
