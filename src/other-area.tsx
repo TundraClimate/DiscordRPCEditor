@@ -1,4 +1,3 @@
-import { invoke } from "@tauri-apps/api";
 import { createSignal } from "solid-js";
 import { Button } from "@suid/material";
 
@@ -7,7 +6,6 @@ export const OtherArea = () => {
 
   const handleUpdate = () => {
     if (!isCooldown()) {
-      // invoke("update");
       setCooldown(true);
       setTimeout(() => {
         if (isCooldown()) setCooldown(false);

@@ -10,6 +10,12 @@ h1 {
   bottom: 0.5em;
 }
 
+h4 {
+  position: relative;
+  bottom: 1em;
+  left: 1em;
+}
+
 .appid-box {
   position: relative;
   bottom: 2.5em;
@@ -58,6 +64,28 @@ h1 {
 .box-cbox {
   height: 40px;
   width: 390px;
+}
+
+.input-box {
+  position: relative;
+  left: 1em;
+  bottom: 2em;
+  background-color: #333;
+  color: white;
+  -webkit-text-fill-color: white;
+  width: 22em;
+}
+
+.opt-text {
+  position: relative;
+  left: 1.5em;
+  bottom: 0.6em;
+}
+
+.opt-check {
+  position: relative;
+  left: 1.2em;
+  bottom: 0.8em;
 }
 
 .other-area {
