@@ -40,11 +40,11 @@ export const PartyBox = () => {
         })}
         {createInput("Party size", (e) => {
           if (!isNaN(Number(e))) setPsize(Number(e));
-          else setPsize(null);
+          else setPsize(0);
         })}
         {createInput("Party max", (e) => {
           if (!isNaN(Number(e))) setPmax(Number(e));
-          else setPmax(null);
+          else setPmax(0);
         })}
       </Stack>
     </Box>

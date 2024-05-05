@@ -2,8 +2,8 @@ import { createSignal } from "solid-js";
 import { invoke } from "@tauri-apps/api";
 
 export const [pid, setPid] = createSignal("");
-export const [psize, setPsize] = createSignal(null as number | null);
-export const [pmax, setPmax] = createSignal(null as number | null);
+export const [psize, setPsize] = createSignal(0);
+export const [pmax, setPmax] = createSignal(0);
 export const [lkey, setLkey] = createSignal("");
 export const [skey, setSkey] = createSignal("");
 export const [ltext, setLText] = createSignal("");
