@@ -1,11 +1,13 @@
 import { createSignal } from "solid-js";
 import { Button } from "@suid/material";
+import { update } from "./activity";
 
 export const OtherArea = () => {
   const [isCooldown, setCooldown] = createSignal(false);
 
   const handleUpdate = () => {
     if (!isCooldown()) {
+      update();
       setCooldown(true);
       setTimeout(() => {
         if (isCooldown()) setCooldown(false);
