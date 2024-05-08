@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js";
-import { invoke } from "@tauri-apps/api";
+import { invoke } from "@tauri-apps/api/core";
 
 export const [pid, setPid] = createSignal("");
 export const [psize, setPsize] = createSignal(0);

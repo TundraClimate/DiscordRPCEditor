@@ -1,22 +1,14 @@
 {
+  "productName": "rpce",
+  "version": "0.0.1",
+  "identifier": "io.github.tundra",
   "build": {
     "beforeDevCommand": "pnpm dev",
     "beforeBuildCommand": "pnpm build",
-    "devPath": "http://localhost:1420",
-    "distDir": "../dist"
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
   },
-  "package": {
-    "productName": "rpce",
-    "version": "0.0.1"
-  },
-  "tauri": {
-    "allowlist": {
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
-      }
-    },
+  "app": {
     "windows": [
       {
         "title": "Discord RPC Editor",
@@ -27,18 +19,17 @@
     ],
     "security": {
       "csp": null
-    },
-    "bundle": {
-      "active": true,
-      "targets": "all",
-      "identifier": "io.github.tundra",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ]
     }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
   }
 }
